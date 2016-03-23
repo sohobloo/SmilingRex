@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38756A0D1C27D1CC00691718 /* REXDetectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38756A0C1C27D1CC00691718 /* REXDetectView.xib */; };
+		3877BADC1C1FB5600057253B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3877BADB1C1FB5600057253B /* opencv2.framework */; };
+		3877BAE11C1FED400057253B /* CMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3877BAE01C1FED400057253B /* CMediaViewController.m */; };
+		3877BAE41C1FF5A10057253B /* REXSmileDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3877BAE31C1FF5A10057253B /* REXSmileDetector.mm */; };
+		38BA16511C1936C800BEC77F /* REXFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38BA16501C1936C800BEC77F /* REXFaceDetector.mm */; };
+		38BA16581C19394C00BEC77F /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 38BA16571C19394C00BEC77F /* haarcascade_frontalface_alt2.xml */; };
+		38BA165D1C19787D00BEC77F /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 38BA165C1C19787D00BEC77F /* haarcascade_smile.xml */; };
+		38E064CB1C16D19A00383482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E064CA1C16D19A00383482 /* main.m */; };
+		38E064CE1C16D19A00383482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E064CD1C16D19A00383482 /* AppDelegate.m */; };
+		38E064D11C16D19A00383482 /* AppleAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E064D01C16D19A00383482 /* AppleAPIViewController.m */; };
+		38E064D41C16D19A00383482 /* OpenCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E064D31C16D19A00383482 /* OpenCVViewController.m */; };
+		38E064D71C16D19A00383482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E064D51C16D19A00383482 /* Main.storyboard */; };
+		38E064D91C16D19A00383482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E064D81C16D19A00383482 /* Assets.xcassets */; };
+		38E064DC1C16D19A00383482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E064DA1C16D19A00383482 /* LaunchScreen.storyboard */; };
+		38EE96481C23F1A5009CB8D6 /* FaceppAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE962F1C23F1A5009CB8D6 /* FaceppAPI.m */; };
+		38EE96491C23F1A5009CB8D6 /* FaceppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96321C23F1A5009CB8D6 /* FaceppClient.m */; };
+		38EE964A1C23F1A5009CB8D6 /* FaceppDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96341C23F1A5009CB8D6 /* FaceppDetection.m */; };
+		38EE964B1C23F1A5009CB8D6 /* FaceppFaceset.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96361C23F1A5009CB8D6 /* FaceppFaceset.m */; };
+		38EE964C1C23F1A5009CB8D6 /* FaceppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96381C23F1A5009CB8D6 /* FaceppGroup.m */; };
+		38EE964D1C23F1A5009CB8D6 /* FaceppGrouping.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE963A1C23F1A5009CB8D6 /* FaceppGrouping.m */; };
+		38EE964E1C23F1A5009CB8D6 /* FaceppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE963C1C23F1A5009CB8D6 /* FaceppInfo.m */; };
+		38EE964F1C23F1A5009CB8D6 /* FaceppPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE963E1C23F1A5009CB8D6 /* FaceppPerson.m */; };
+		38EE96501C23F1A5009CB8D6 /* FaceppRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96401C23F1A5009CB8D6 /* FaceppRecognition.m */; };
+		38EE96511C23F1A5009CB8D6 /* FaceppTrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96421C23F1A5009CB8D6 /* FaceppTrainer.m */; };
+		38EE96521C23F1A5009CB8D6 /* FaceppError.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96451C23F1A5009CB8D6 /* FaceppError.m */; };
+		38EE96531C23F1A5009CB8D6 /* FaceppResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96471C23F1A5009CB8D6 /* FaceppResult.m */; };
+		38EE96571C23F248009CB8D6 /* FacePlusPlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96561C23F248009CB8D6 /* FacePlusPlusViewController.m */; };
+		38EE965A1C23F366009CB8D6 /* REXPhotoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE96591C23F366009CB8D6 /* REXPhotoLoader.m */; };
+		38EE965E1C23FE45009CB8D6 /* REXDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EE965C1C23FE45009CB8D6 /* REXDetectViewController.m */; };
+		38EE965F1C23FE45009CB8D6 /* REXDetectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EE965D1C23FE45009CB8D6 /* REXDetectViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38756A0C1C27D1CC00691718 /* REXDetectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = REXDetectView.xib; sourceTree = "<group>"; };
+		3877BADB1C1FB5600057253B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3877BADF1C1FED400057253B /* CMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMediaViewController.h; sourceTree = "<group>"; };
+		3877BAE01C1FED400057253B /* CMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMediaViewController.m; sourceTree = "<group>"; };
+		3877BAE21C1FF5A10057253B /* REXSmileDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REXSmileDetector.h; sourceTree = "<group>"; };
+		3877BAE31C1FF5A10057253B /* REXSmileDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = REXSmileDetector.mm; sourceTree = "<group>"; };
+		38BA164F1C1936C700BEC77F /* REXFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REXFaceDetector.h; sourceTree = "<group>"; };
+		38BA16501C1936C800BEC77F /* REXFaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = REXFaceDetector.mm; sourceTree = "<group>"; };
+		38BA16571C19394C00BEC77F /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		38BA165C1C19787D00BEC77F /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		38E064C61C16D19A00383482 /* REXSmilingDetectionResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REXSmilingDetectionResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E064CA1C16D19A00383482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38E064CC1C16D19A00383482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38E064CD1C16D19A00383482 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38E064CF1C16D19A00383482 /* AppleAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleAPIViewController.h; sourceTree = "<group>"; };
+		38E064D01C16D19A00383482 /* AppleAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleAPIViewController.m; sourceTree = "<group>"; };
+		38E064D21C16D19A00383482 /* OpenCVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVViewController.h; sourceTree = "<group>"; };
+		38E064D31C16D19A00383482 /* OpenCVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVViewController.m; sourceTree = "<group>"; };
+		38E064D61C16D19A00383482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38E064D81C16D19A00383482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38E064DB1C16D19A00383482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38E064DD1C16D19A00383482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38EE962E1C23F1A5009CB8D6 /* FaceppAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppAPI.h; sourceTree = "<group>"; };
+		38EE962F1C23F1A5009CB8D6 /* FaceppAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppAPI.m; sourceTree = "<group>"; };
+		38EE96311C23F1A5009CB8D6 /* FaceppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppClient.h; sourceTree = "<group>"; };
+		38EE96321C23F1A5009CB8D6 /* FaceppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppClient.m; sourceTree = "<group>"; };
+		38EE96331C23F1A5009CB8D6 /* FaceppDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppDetection.h; sourceTree = "<group>"; };
+		38EE96341C23F1A5009CB8D6 /* FaceppDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppDetection.m; sourceTree = "<group>"; };
+		38EE96351C23F1A5009CB8D6 /* FaceppFaceset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppFaceset.h; sourceTree = "<group>"; };
+		38EE96361C23F1A5009CB8D6 /* FaceppFaceset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppFaceset.m; sourceTree = "<group>"; };
+		38EE96371C23F1A5009CB8D6 /* FaceppGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppGroup.h; sourceTree = "<group>"; };
+		38EE96381C23F1A5009CB8D6 /* FaceppGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppGroup.m; sourceTree = "<group>"; };
+		38EE96391C23F1A5009CB8D6 /* FaceppGrouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppGrouping.h; sourceTree = "<group>"; };
+		38EE963A1C23F1A5009CB8D6 /* FaceppGrouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppGrouping.m; sourceTree = "<group>"; };
+		38EE963B1C23F1A5009CB8D6 /* FaceppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppInfo.h; sourceTree = "<group>"; };
+		38EE963C1C23F1A5009CB8D6 /* FaceppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppInfo.m; sourceTree = "<group>"; };
+		38EE963D1C23F1A5009CB8D6 /* FaceppPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppPerson.h; sourceTree = "<group>"; };
+		38EE963E1C23F1A5009CB8D6 /* FaceppPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppPerson.m; sourceTree = "<group>"; };
+		38EE963F1C23F1A5009CB8D6 /* FaceppRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppRecognition.h; sourceTree = "<group>"; };
+		38EE96401C23F1A5009CB8D6 /* FaceppRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppRecognition.m; sourceTree = "<group>"; };
+		38EE96411C23F1A5009CB8D6 /* FaceppTrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppTrainer.h; sourceTree = "<group>"; };
+		38EE96421C23F1A5009CB8D6 /* FaceppTrainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppTrainer.m; sourceTree = "<group>"; };
+		38EE96441C23F1A5009CB8D6 /* FaceppError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppError.h; sourceTree = "<group>"; };
+		38EE96451C23F1A5009CB8D6 /* FaceppError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppError.m; sourceTree = "<group>"; };
+		38EE96461C23F1A5009CB8D6 /* FaceppResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppResult.h; sourceTree = "<group>"; };
+		38EE96471C23F1A5009CB8D6 /* FaceppResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppResult.m; sourceTree = "<group>"; };
+		38EE96541C23F1C0009CB8D6 /* APIKey+APISecret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APIKey+APISecret.h"; sourceTree = "<group>"; };
+		38EE96551C23F248009CB8D6 /* FacePlusPlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacePlusPlusViewController.h; sourceTree = "<group>"; };
+		38EE96561C23F248009CB8D6 /* FacePlusPlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacePlusPlusViewController.m; sourceTree = "<group>"; };
+		38EE96581C23F366009CB8D6 /* REXPhotoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REXPhotoLoader.h; sourceTree = "<group>"; };
+		38EE96591C23F366009CB8D6 /* REXPhotoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REXPhotoLoader.m; sourceTree = "<group>"; };
+		38EE965B1C23FE45009CB8D6 /* REXDetectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REXDetectViewController.h; sourceTree = "<group>"; };
+		38EE965C1C23FE45009CB8D6 /* REXDetectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REXDetectViewController.m; sourceTree = "<group>"; };
+		38EE965D1C23FE45009CB8D6 /* REXDetectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = REXDetectViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38E064C31C16D19A00383482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3877BADC1C1FB5600057253B /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38E064BD1C16D19A00383482 = {
+			isa = PBXGroup;
+			children = (
+				38E064C81C16D19A00383482 /* REXSmilingDetectionResearch */,
+				38E064C71C16D19A00383482 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38E064C71C16D19A00383482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38E064C61C16D19A00383482 /* REXSmilingDetectionResearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38E064C81C16D19A00383482 /* REXSmilingDetectionResearch */ = {
+			isa = PBXGroup;
+			children = (
+				38EE96601C240F0B009CB8D6 /* Frameworks */,
+				38E064CC1C16D19A00383482 /* AppDelegate.h */,
+				38E064CD1C16D19A00383482 /* AppDelegate.m */,
+				38BA164F1C1936C700BEC77F /* REXFaceDetector.h */,
+				38BA16501C1936C800BEC77F /* REXFaceDetector.mm */,
+				3877BAE21C1FF5A10057253B /* REXSmileDetector.h */,
+				3877BAE31C1FF5A10057253B /* REXSmileDetector.mm */,
+				38EE96581C23F366009CB8D6 /* REXPhotoLoader.h */,
+				38EE96591C23F366009CB8D6 /* REXPhotoLoader.m */,
+				38EE965B1C23FE45009CB8D6 /* REXDetectViewController.h */,
+				38EE965C1C23FE45009CB8D6 /* REXDetectViewController.m */,
+				38EE965D1C23FE45009CB8D6 /* REXDetectViewController.xib */,
+				38E064D51C16D19A00383482 /* Main.storyboard */,
+				3877BADF1C1FED400057253B /* CMediaViewController.h */,
+				3877BAE01C1FED400057253B /* CMediaViewController.m */,
+				38E064CF1C16D19A00383482 /* AppleAPIViewController.h */,
+				38E064D01C16D19A00383482 /* AppleAPIViewController.m */,
+				38EE96551C23F248009CB8D6 /* FacePlusPlusViewController.h */,
+				38EE96561C23F248009CB8D6 /* FacePlusPlusViewController.m */,
+				38E064D21C16D19A00383482 /* OpenCVViewController.h */,
+				38E064D31C16D19A00383482 /* OpenCVViewController.m */,
+				38E064D81C16D19A00383482 /* Assets.xcassets */,
+				38E064C91C16D19A00383482 /* Supporting Files */,
+				38756A0C1C27D1CC00691718 /* REXDetectView.xib */,
+			);
+			path = REXSmilingDetectionResearch;
+			sourceTree = "<group>";
+		};
+		38E064C91C16D19A00383482 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38E064CA1C16D19A00383482 /* main.m */,
+				38E064DD1C16D19A00383482 /* Info.plist */,
+				38E064DA1C16D19A00383482 /* LaunchScreen.storyboard */,
+				38BA16571C19394C00BEC77F /* haarcascade_frontalface_alt2.xml */,
+				38BA165C1C19787D00BEC77F /* haarcascade_smile.xml */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38EE962D1C23F0D4009CB8D6 /* FacePlusPlus */ = {
+			isa = PBXGroup;
+			children = (
+				38EE96541C23F1C0009CB8D6 /* APIKey+APISecret.h */,
+				38EE962E1C23F1A5009CB8D6 /* FaceppAPI.h */,
+				38EE962F1C23F1A5009CB8D6 /* FaceppAPI.m */,
+				38EE96301C23F1A5009CB8D6 /* FaceppAPISource */,
+				38EE96431C23F1A5009CB8D6 /* FaceppResult */,
+			);
+			name = FacePlusPlus;
+			sourceTree = "<group>";
+		};
+		38EE96301C23F1A5009CB8D6 /* FaceppAPISource */ = {
+			isa = PBXGroup;
+			children = (
+				38EE96311C23F1A5009CB8D6 /* FaceppClient.h */,
+				38EE96321C23F1A5009CB8D6 /* FaceppClient.m */,
+				38EE96331C23F1A5009CB8D6 /* FaceppDetection.h */,
+				38EE96341C23F1A5009CB8D6 /* FaceppDetection.m */,
+				38EE96351C23F1A5009CB8D6 /* FaceppFaceset.h */,
+				38EE96361C23F1A5009CB8D6 /* FaceppFaceset.m */,
+				38EE96371C23F1A5009CB8D6 /* FaceppGroup.h */,
+				38EE96381C23F1A5009CB8D6 /* FaceppGroup.m */,
+				38EE96391C23F1A5009CB8D6 /* FaceppGrouping.h */,
+				38EE963A1C23F1A5009CB8D6 /* FaceppGrouping.m */,
+				38EE963B1C23F1A5009CB8D6 /* FaceppInfo.h */,
+				38EE963C1C23F1A5009CB8D6 /* FaceppInfo.m */,
+				38EE963D1C23F1A5009CB8D6 /* FaceppPerson.h */,
+				38EE963E1C23F1A5009CB8D6 /* FaceppPerson.m */,
+				38EE963F1C23F1A5009CB8D6 /* FaceppRecognition.h */,
+				38EE96401C23F1A5009CB8D6 /* FaceppRecognition.m */,
+				38EE96411C23F1A5009CB8D6 /* FaceppTrainer.h */,
+				38EE96421C23F1A5009CB8D6 /* FaceppTrainer.m */,
+			);
+			path = FaceppAPISource;
+			sourceTree = "<group>";
+		};
+		38EE96431C23F1A5009CB8D6 /* FaceppResult */ = {
+			isa = PBXGroup;
+			children = (
+				38EE96441C23F1A5009CB8D6 /* FaceppError.h */,
+				38EE96451C23F1A5009CB8D6 /* FaceppError.m */,
+				38EE96461C23F1A5009CB8D6 /* FaceppResult.h */,
+				38EE96471C23F1A5009CB8D6 /* FaceppResult.m */,
+			);
+			path = FaceppResult;
+			sourceTree = "<group>";
+		};
+		38EE96601C240F0B009CB8D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3877BADB1C1FB5600057253B /* opencv2.framework */,
+				38EE962D1C23F0D4009CB8D6 /* FacePlusPlus */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38E064C51C16D19A00383482 /* REXSmilingDetectionResearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E064E01C16D19A00383482 /* Build configuration list for PBXNativeTarget "REXSmilingDetectionResearch" */;
+			buildPhases = (
+				38E064C21C16D19A00383482 /* Sources */,
+				38E064C31C16D19A00383482 /* Frameworks */,
+				38E064C41C16D19A00383482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REXSmilingDetectionResearch;
+			productName = REXSmilingDetectionResearch;
+			productReference = 38E064C61C16D19A00383482 /* REXSmilingDetectionResearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38E064BE1C16D19A00383482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Rex Rao";
+				TargetAttributes = {
+					38E064C51C16D19A00383482 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = M944BA6385;
+					};
+				};
+			};
+			buildConfigurationList = 38E064C11C16D19A00383482 /* Build configuration list for PBXProject "REXSmilingDetectionResearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38E064BD1C16D19A00383482;
+			productRefGroup = 38E064C71C16D19A00383482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38E064C51C16D19A00383482 /* REXSmilingDetectionResearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38E064C41C16D19A00383482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BA16581C19394C00BEC77F /* haarcascade_frontalface_alt2.xml in Resources */,
+				38BA165D1C19787D00BEC77F /* haarcascade_smile.xml in Resources */,
+				38E064DC1C16D19A00383482 /* LaunchScreen.storyboard in Resources */,
+				38E064D91C16D19A00383482 /* Assets.xcassets in Resources */,
+				38756A0D1C27D1CC00691718 /* REXDetectView.xib in Resources */,
+				38EE965F1C23FE45009CB8D6 /* REXDetectViewController.xib in Resources */,
+				38E064D71C16D19A00383482 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38E064C21C16D19A00383482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38EE96481C23F1A5009CB8D6 /* FaceppAPI.m in Sources */,
+				38E064D41C16D19A00383482 /* OpenCVViewController.m in Sources */,
+				38EE964E1C23F1A5009CB8D6 /* FaceppInfo.m in Sources */,
+				3877BAE11C1FED400057253B /* CMediaViewController.m in Sources */,
+				38EE964D1C23F1A5009CB8D6 /* FaceppGrouping.m in Sources */,
+				38E064CE1C16D19A00383482 /* AppDelegate.m in Sources */,
+				38EE965E1C23FE45009CB8D6 /* REXDetectViewController.m in Sources */,
+				38EE96501C23F1A5009CB8D6 /* FaceppRecognition.m in Sources */,
+				38EE96531C23F1A5009CB8D6 /* FaceppResult.m in Sources */,
+				38EE964B1C23F1A5009CB8D6 /* FaceppFaceset.m in Sources */,
+				38E064D11C16D19A00383482 /* AppleAPIViewController.m in Sources */,
+				38E064CB1C16D19A00383482 /* main.m in Sources */,
+				38EE96491C23F1A5009CB8D6 /* FaceppClient.m in Sources */,
+				38EE96521C23F1A5009CB8D6 /* FaceppError.m in Sources */,
+				38EE96571C23F248009CB8D6 /* FacePlusPlusViewController.m in Sources */,
+				38EE964C1C23F1A5009CB8D6 /* FaceppGroup.m in Sources */,
+				3877BAE41C1FF5A10057253B /* REXSmileDetector.mm in Sources */,
+				38EE96511C23F1A5009CB8D6 /* FaceppTrainer.m in Sources */,
+				38EE965A1C23F366009CB8D6 /* REXPhotoLoader.m in Sources */,
+				38EE964A1C23F1A5009CB8D6 /* FaceppDetection.m in Sources */,
+				38BA16511C1936C800BEC77F /* REXFaceDetector.mm in Sources */,
+				38EE964F1C23F1A5009CB8D6 /* FaceppPerson.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38E064D51C16D19A00383482 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E064D61C16D19A00383482 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38E064DA1C16D19A00383482 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E064DB1C16D19A00383482 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38E064DE1C16D19A00383482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38E064DF1C16D19A00383482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38E064E11C16D19A00383482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/REXSmilingDetectionResearch",
+				);
+				INFOPLIST_FILE = REXSmilingDetectionResearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sohobloo.REXSmilingDetectionResearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+			};
+			name = Debug;
+		};
+		38E064E21C16D19A00383482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/REXSmilingDetectionResearch",
+				);
+				INFOPLIST_FILE = REXSmilingDetectionResearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.sohobloo.REXSmilingDetectionResearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38E064C11C16D19A00383482 /* Build configuration list for PBXProject "REXSmilingDetectionResearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E064DE1C16D19A00383482 /* Debug */,
+				38E064DF1C16D19A00383482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E064E01C16D19A00383482 /* Build configuration list for PBXNativeTarget "REXSmilingDetectionResearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E064E11C16D19A00383482 /* Debug */,
+				38E064E21C16D19A00383482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38E064BE1C16D19A00383482 /* Project object */;
+}
